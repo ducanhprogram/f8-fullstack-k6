@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Asap;
+    src: url(../font/Asap/Asap-VariableFont_wdth\,wght.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../DJI_0030-fixed2-mini-1.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: Asap;
+    color: #fff;
+}
+
+.header {
+    position: relative;
+}
+.header .banner {
+    display: flex;
+
+    position: absolute;
+    top: 320px;
+    left: 100px;
+}
+
+.header .images {
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 30px 40px;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding: 20px;
+}
+.content .desc {
+    display: flex;
+    padding: 10px 20px;
+
+}
+
+p:last-child {
+    padding-left: 30px;
+}
+
+.content .desc p span{
+    display: inline-block;
+    font-size: 2.8rem;
+}
+
+.nav {
+    position: absolute;
+    top: 550px;
+    color: #000;
+    right: 80px;
+    font-weight: 600;
+}
+
+.nav ul li {
+    transition: all 0.2s ease-in-out;
+    padding: 20px;
+    float: left;
+
+}
+.nav ul li:hover {
+   color:  #e1766b;
+}
+
+.nav ul li:hover::after {
+    content: "";
+    display: flex;
+    border: 3px solid #e1766b; 
+    margin-top: 20px;
+}

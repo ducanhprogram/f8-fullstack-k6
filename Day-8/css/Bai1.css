@@ -1,0 +1,141 @@
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Manrope', sans-serif;
+    background-color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+}
+nav {
+    background-color: #216914;
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+    height: 85px; 
+    line-height: 85px
+}
+
+nav .wrapper {
+    display: flex;
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .wrapper .logo a{
+    color: #f2f3f3;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+nav .wrapper .nav-links {
+    display: flex;
+}
+
+nav .wrapper .nav-links > li.item > a, 
+nav .wrapper .nav-links >li.warning > a,
+nav .wrapper .nav-links >li.Search > a  {
+    color: #fff;
+}
+
+nav .wrapper .nav-links li  a {
+    color: #f2f3f3;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #000;
+}
+
+nav .wrapper .nav-links li a:hover {
+    background-color: #ff652f;
+}
+
+nav .wrapper .nav-links li.item > a:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-size: 1.2rem;
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+nav .wrapper .nav-links li.item:hover > a:after {
+    content: "\f078";
+    font-family: FontAwesome;
+    font-size: 1.2rem;
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+nav .wrapper .mega-menu {
+    position: absolute;
+    top: 85px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+nav .wrapper .nav-links li:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .wrapper .nav-links .content {
+    display: flex;
+    background-color: #fff;
+    padding: 25px 20px;
+    border-top: 4px solid #ff652f;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav .wrapper .mega-menu .content .row {
+    line-height: 45px;
+}
+
+nav .wrapper .content .row .mega-menu-links {
+    margin-left: -40px;
+    border-left: 1px solid #ccc;
+}
+
+nav .wrapper .content .row:nth-of-type(1) .mega-menu-links {
+    border-left: 0;
+}
+
+
+nav .wrapper .content .row .mega-menu-links:nth-child(1) {
+    border-left: 0;
+}
+
+nav .wrapper .content .row .mega-menu-links li {
+    padding: 0 20px;
+}
+
+nav .wrapper .nav-links .dropdown-menu li a {
+    width: 100%;
+    display: block;
+    padding: 0 0 0 35px;
+    font-weight: 700;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto
+}
+
+.container .title-service {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container .title-service h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.container .title-service p {
+    font-size: 1.3rem;
+    padding-top: 20px;
+}
+
+.container .list-services {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 100px;
+   /* padding-top: 50px; */
+}
+
+.container .list-services .item-service{
+    position: relative;
+    max-width: calc(100% / 3);
+    text-align: center;
+    padding-right: 30px;
+    padding-top: 50px;
+    height: 350px;
+}
+
+.container .list-services .item-service img {
+    width: 100px;
+}
+
+.container .list-services .item-service .title-item {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.container .list-services .item-service p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    padding-top: 20px;
+}
+
+.container .list-services .item-service button {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #29388e;
+    color: #fff;
+    cursor: pointer;
+    bottom: 0;
+    left: 35%;
+    border: none;
+    border-radius: 4px;
+}
