@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.list-court {
+    margin: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.list-court .item {
+    width: 275px;
+    height: 200px;
+    border: 1px solid #e0baaa;
+    padding: 50px 20px 35px 30px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.list-court .item .image {
+    font-size: 3rem;
+    color: #d6967a;
+}
+
+.list-court .item .content {
+    padding-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.list-court .item .content .desc .title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+.list-court .item .content .desc .para {
+    padding-top: 20px;
+    line-height: 2.4rem;
+    color:#572915;
+}
+
+.list-court .item .content .link {
+    padding-top: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.list-court .item .content .link a{
+    text-decoration: none;
+   
+    /* color: #fff; */
+}
+
+.list-court .item .content .link a span {
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    padding: 2px 4px;
+    text-align: center;
+}
+
+.list-court .item .content .link a span i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.list-court .item:hover {
+    background-image: url(https://images.unsplash.com/photo-1704497937233-0cb4f5f6cd18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #fff;
+}
+
+.list-court .item:hover .background-color {
+    background-color: #d6967abd;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+      top: 0;
+     left: 0;
+     transition: all 0.3s ease-in-out;
+}
+
+.list-court .item:hover .image {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.list-court .item:hover .content .desc .title{
+    transform: translateY(-70px);
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+}
+
+.list-court .item:hover .content .desc .para{
+    transform: translateY(-70px);
+    transition: all 0.6s ease-in-out;
+    transition-duration: 0.6s;
+    color: #fff;
+}
+
+.list-court .item:hover .content .link {
+    transform: translateY(-70px);
+    transition: all 0.8s ease-in-out;
+    transition-duration: 0.6s;
+    padding-top: 60px;
+}
+
+.list-court .item:hover .content .link a {
+    color: #fff;
+    transition: all 0.8s ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.list-court .item:hover .content .link a span {
+    border: 1px solid #ccc;
+}
+
+.list-court .item .content .link a:hover span {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+
+.list-court .item .content .link a:hover span i {
+    text-align: center;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.list-court .item:hover .content .link {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.list-court .item:hover .content {
+    padding-top: 100px;
+    padding-left: 20px;
+    position: absolute;
+    border: 1px solid #d6d0d0;
+    top: 16px;
+    left: 10px;
+    width: 87%;
+    height: 56%;
+    transition: border 0.3s ease-in-out;
+}
+
