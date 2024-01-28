@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d6d0d0;
+}
+
+section {
+    margin: 100px auto;
+    position: relative;
+    width: fit-content;
+}
+
+.nav ul {
+    width: fit-content;
+    display: flex;
+}
+
+
+
+
+.nav ul li {
+    /* display: inline-block; */
+    text-decoration: none;
+    border-left: 2px solid #ccc;
+}
+
+
+.nav ul li label {
+    display: block;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border: 5px solid #fff;
+    cursor: pointer;
+
+}
+
+
+
+.nav ul li label:hover,
+.nav ul li label:focus {
+    background-color: #4496DC;
+    color: #fff;
+}
+
+.content .box-inner {
+    position: absolute;
+    max-width: 100%;
+    max-height: 200px;
+    left: 0;
+    top: 58px;
+    background-color: #fff;
+    padding: 20px;
+    overflow-x: scroll;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@keyframes change {
+    from {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(-90deg);
+    }
+    to {
+      transform: rotateX(0deg);
+    }
+  }
+
+.content input[type="radio"]:checked + .box-inner {
+    opacity: 1;
+    visibility: visible;
+    animation: change 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+}
+.content .box-inner h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 5px 0 10px 5px;
+}
+
+.content .box-inner p {
+    padding: 10px 5px;
+    line-height: 3rem;
+}

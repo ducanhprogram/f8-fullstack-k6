@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #31A8F7;
+
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    right: 150px;
+    text-align: right;
+}
+
+.title h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 3.8rem;
+}
+
+.title p {
+    margin: 0;
+    font-size: 2.2rem;
+    padding-top: 40px;
+    font-weight: 300;
+    color: #ecd5d5
+}
+
+.title p span {
+    font-size: 1.8rem;
+}
+
+.nav label {
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+    top: 0;
+    padding: 20px;
+    font-size: 3rem;
+    
+}
+
+.nav .list {
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.nav label .right {
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    color: #31A8F7;
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out;
+
+}
+
+.nav label .bar {
+    color: #31A8F7;
+}
+.nav .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom-right-radius: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav input:checked ~ label .bar {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav input:not(:checked) ~ label .bar {
+    transition-delay: 0.3s;
+    
+}
+
+.nav input:checked ~ label .right {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(180deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.nav input:not(:checked) ~ label .right {
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.nav input:checked ~ .list {
+    opacity: 1;
+    visibility: visible;
+    transition: opactity 1s;
+}
+
+.nav input:checked ~ .overlay {
+    width: 200vw;
+    height: 200vh;
+    border-bottom-right-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.nav .list ul li {
+    padding: 10px 100px 10px 40px;
+    position: relative;
+    z-index: 10;
+    font-weight: 500;
+    cursor: pointer;
+    color: #31A8F7;
+
+}
+
+.nav .list ul li:hover {
+    color: #000;
+    background-color: #eee;
+}
