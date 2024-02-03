@@ -97,6 +97,8 @@ img {
 :root {
     --background-btn: #F86061;
     --bg-color2: #fef5f5;
+    --color-3: #676767;
+    --color-2: #2e2e2e;
 }
 
 /*  Common Css ends */
@@ -272,6 +274,7 @@ img {
     color: #2E2E2E;
     letter-spacing: -0.74px;
     line-height: 88px;
+    font-weight: 700;
 }
 
 .header-grover-wrap .header-grover-content-title span {
@@ -298,6 +301,10 @@ img {
     display: flex;
     align-items: center;
     gap: 34px;
+}
+
+.header-grover-btn-wrap {
+    margin: 50px 0 10px 0;
 }
 
 .header-grover-wrap .header-grover-btn-wrap .header-grover-btn .header-grover-now {
@@ -401,7 +408,7 @@ img {
 .service-grover-content-bg {
     position: absolute;
     width: 290px;
-    height: 370px;
+    height: 350px;
     background-color: #FE6A6A;
     border-radius: 12px;
     left: 19px;
@@ -460,6 +467,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
+    margin-top: 15px;
 }
 
 /* -----------feature-grover-wrapper------------- */
@@ -517,7 +525,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 30px; 
-    max-width: 65%;
+    max-width: 75%;
     margin-bottom: 53px;
 }
 
@@ -695,4 +703,79 @@ img {
     box-sizing: border-box;
     border-radius: 12px;
     color: #2E2E2E;
+}
+
+/* ---------------------footer-grover-wrapper-------------------- */
+
+
+.footer-grover-wrapper {
+    padding: 50px 0 0 0;
+}
+
+.footer-grover-top {
+    padding: 30px 0;
+}
+
+.footer-grover-top > .row {
+    display: flex;
+}
+
+
+.footer-logo-img {
+    width: auto;
+}
+
+.footer-grover-logo-wrap {
+    width: 33%;
+    margin: 20px 10px;
+}
+
+ .footer-grover-content-wrap .row {
+    display: flex;
+} 
+
+.footer-grover-content-logo-txt {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 26px;
+     color: var(--color-3);
+     max-width: 75%;
+     margin: 25px 0 10px 0;
+
+}
+
+.footer-grover-content-wrap {
+    width: calc(100% - 33%);
+}
+
+.footer-grover-content {
+    padding: 30px 0 10px 10px;
+    width: 100%;
+}
+
+.footer-grover-content-title {
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+    color: var(--color-2);
+}
+
+.footer-grover-content-list {
+    margin: 30px 0 10px 0;
+}
+
+.footer-grover-list-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: var(--color-3);
+}
+
+.footer-grover-content-txt {
+    color: #888888;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
 }
