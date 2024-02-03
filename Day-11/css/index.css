@@ -779,3 +779,43 @@ img {
     font-size: 16px;
     line-height: 26px;
 }
+
+
+/* ---------------------------footer-grover-bottom---------------- */
+.footer-grover-bottom {
+    padding: 0 0 30px 0;
+}
+
+.footer-dash {
+    height: 1px;
+    background-color: #ECECEC;
+    margin: 30px 0;
+    opacity: 0.4;
+}
+
+.footer-grover-bottom .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-grover-copyright-txt {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 24px;
+    color: #8C8C8C;
+}
+
+.footer-grover-condition {
+    display: flex;
+    align-items: center;
+}
+
+.footer-grover-condition-link {
+    display: block;
+    font-weight: 500;
+    margin: 0 10px;
+    line-height: 24px;
+    color: #747474;
+    font-size: 1.4rem;
+}
