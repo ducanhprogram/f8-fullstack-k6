@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grover</title>
         <link rel="stylesheet" href="./css/reset.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
         <link rel="stylesheet" href="./css/index.css" />
 
         <!-- Favicons -->
@@ -41,6 +45,11 @@
                             />
                         </a>
                     </div>
+                    <input type="checkbox" id="toggle" name="toggle" hidden />
+                    <!-- label-toggle -->
+                    <label class="label-toggle" for="toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item-grover">
@@ -81,7 +90,9 @@
                                 </form>
                             </li>
                         </ul>
+                        <!-- end .search-btn -->
                     </div>
+                    <!-- end .navbar-collapse-->
                 </div>
             </nav>
             <!-- end .navbar-grover -->
