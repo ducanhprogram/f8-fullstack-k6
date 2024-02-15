@@ -112,7 +112,8 @@ img {
 
 .container {
     margin: 0 auto;
-    width: 1300px;
+    max-width: 1300px;
+    padding: 0 40px;
 }
 
 
@@ -279,7 +280,6 @@ img {
 
 .header-grover-wrap .header-grover-content-title span {
     color: #F54748;
-    font-size: 74px;
     font-style: normal;
     font-weight: 500;
     line-height: 88px;
@@ -830,15 +830,92 @@ img {
 @media screen and (max-width: 1399px) {
     .container {
         padding: 0 30px;
-        max-width: 1320px;
+        max-width: 1310px;
         margin: 0 auto;
     }
+    .header-grover-wrap .header-grover-content-title {
+        line-height: 58px;
+    }
+
+    .service-grover-wrapper .service-grover-heading .service-grover-heading-title2 {
+        font-size: 3.2rem;
+        line-height: 44px;
+        max-width: 100%;
+    }
+
+    /* .service-grover-content-wrap .row {
+        flex: 0 0 auto;
+        margin: 0 auto;
+    }  */
+
+    .service-grover-content-wrap .service-grover-content {
+        padding: 50px 20px;
+        width: 280px;
+    }
+
+    .service-grover-content-bg {
+        width: 255px;
+        height: 105%;
+    }
+    
+    .service-grover-content-wrap .row  {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .feature-grover-content .feature-grover-content-title5 {
+        font-size: 1.6rem;
+    }
+
+    .feature-grover-content .feature-grover-content-title2 {
+        font-size: 3.2rem;
+        line-height: 44px;
+        max-width: 90%;
+    }
+
+    .feature-grover-content .feature-grover-content-para {
+        font-size: 1.6rem;
+        max-width: 90%;
+    }
+
+    .feature-grover-content .feature-btn {
+        padding: 18px 40px;
+        font-size: 16px;
+    }
+
+    .feature2-grover-content-title5  {
+        font-size: 1.6rem;
+    }
+
+    .feature2-grover-content-title2 {
+        font-size: 32px;
+        line-height: 44px;
+        max-width: 90%;
+    }
+
+    .feature2-grover-content-para  {
+        font-size: 16px;
+      max-width: 100%;
+    }
+
+    .feature2-grover-content-btn .feature2-content-btn {
+        width: 180px;
+        padding: 18px 40px;
+        font-size: 16px;
+    }
+
+    .feature2-grover-wrapper .row {
+        gap: 50px;
+    }
+
 }
+   
+
 
 @media screen and (max-width: 991px) {
     .container {
         padding: 30px 80px;
-        max-width: 960px;
+        max-width: 920px;
         margin: 0 auto;
         flex-wrap: wrap;
     }
@@ -871,10 +948,70 @@ img {
 .label-toggle {
     opacity: 1;
      visibility: visible;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #837f7f;
      border: 1px solid gray;
      padding: 5px 15px;
+}
+
+.header-grover-wrap .row {
+    display: block;
+}
+
+.header-grover-wrap .header-grover-content {
+    width: 100%;
+    font-size: 3.8rem;
+ }
+
+ .header-grover-wrap .header-grover-content-title {
+    font-size: 3.8rem;
+ }
+
+ .header-grover-wrap .header-grover-content-para {
+    max-width: 100%;
+    font-size: 1.6rem;
+ }
+
+ .header-grover-wrap .header-grover-content-img {
+    width: 100%;
+ }
+
+ .service-grover-wrapper .service-grover-heading .service-grover-heading-title5 {
+    font-size: 1.6rem;
+ }
+
+ .service-grover-content-wrap .service-grover-content {
+    padding: 50px 20px;
+    width: 220px;
+}
+
+.service-grover-content-bg {
+    width: 190px;
+    height: 105%;
+}
+
+.service-grover-content-wrap .row {
+    gap: 30px;
+}
+
+.featuree-grover-content-img {
+    width: 100%;
+}
+
+.feature-grover-content {
+    width: 100%;
+}
+
+.feature2-grover-content {
+    width: 100%;
+}
+
+.feature2-grover-content-img {
+    width: 100%;
+}
+
+.feature2-grover-wrapper .row {
+    flex-wrap: wrap;
 }
 
 }
