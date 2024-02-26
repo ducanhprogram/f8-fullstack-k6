@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Profile</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./img/favicon_io/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./img/favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./img/favicon_io/site.webmanifest" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="wrapper-inner">
+                <div class="container">
+                    <nav class="navbar">
+                        <ul class="list-item">
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Random Symboles 5.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Home.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Message.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Buy.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Activity.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Time Circle.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <span class="line"></span>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Wallet.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Friends.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Settings.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#!">
+                                    <img
+                                        src="./img/img-icon/Icon - Log Out.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- end .sidebar -->
+
+                    <main class="main">
+                        <header class="header">
+                            <div class="header-wrapper">
+                                <form class="search-form header-action-item">
+                                    <img
+                                        src="./img/img-icon/Icon - Search.svg"
+                                        alt=""
+                                        class="img-form"
+                                    />
+                                    <input
+                                        class="search-input"
+                                        type="text"
+                                        placeholder="Search by creator or collection"
+                                    />
+                                </form>
+                                <div class="eth-currency header-action-item">
+                                    <a href="#!" class="link-eth">
+                                        <img
+                                            src="./img/img-icon/Icon - ETH.svg"
+                                            alt="icon-eth"
+                                        />
+                                        <span>3,25 ETH</span>
+                                    </a>
+                                </div>
+                                <div
+                                    class="icon-notification header-action-item"
+                                >
+                                    <a href="#!"
+                                        ><img
+                                            src="./img/img-icon/Icon - Notification.svg"
+                                            alt="img_notification"
+                                    /></a>
+                                </div>
+                                <div class="create-game header-action-item">
+                                    <a class="link-create" href="#!">Create</a>
+                                </div>
+                                <div class="connect-wallet header-action-item">
+                                    <a class="link-connect-wallet" href="#!">
+                                        Connect Wallet
+                                    </a>
+                                </div>
+
+                                <div class="header-line"></div>
+
+                                <input
+                                    type="checkbox"
+                                    id="checkbox-profile"
+                                    hidden
+                                />
+                                <label
+                                    for="checkbox-profile"
+                                    class="profile-info"
+                                >
+                                    <div class="link-profile-info" href="#!">
+                                        <span class="avatar"
+                                            ><img
+                                                src="./img/img-icon/unsplash_pmACe385Ruo.svg"
+                                                alt=""
+                                        /></span>
+                                        <div class="profile-info-name">
+                                            <p class="your-name">Le Duc Anh</p>
+                                            <p class="your-account">@ldanh</p>
+                                        </div>
+
+                                        <div class="icon-info-name">
+                                            <img
+                                                src="./img/img-icon/ph_caret-down.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label
+                                    for="checkbox-profile"
+                                    class="overlay"
+                                ></label>
+
+                                <div class="tab-profile">
+                                    <div class="profile-title">
+                                        <h2 class="profile-heading2">
+                                            My Profile
+                                        </h2>
+                                        <span class="one ornament">
+                                            <img
+                                                src="./img/img-icon/profile-one.svg"
+                                                alt=""
+                                            />
+                                        </span>
+
+                                        <span class="three ornament">
+                                            <img
+                                                src="./img/img-icon/profile-three.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="two ornament">
+                                            <img
+                                                src="./img/img-icon/profile-two.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="four ornament">
+                                            <img
+                                                src="./img/img-icon/profile-four.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="five ornament">
+                                            <img
+                                                src="./img/img-icon/profile-five.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="six ornament">
+                                            <img
+                                                src="./img/img-icon/profile-six.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="seven ornament">
+                                            <img
+                                                src="./img/img-icon/profile-seven.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="eight ornament">
+                                            <img
+                                                src="./img/img-icon/profile-eight.svg"
+                                                alt=""
+                                            />
+                                        </span>
+
+                                        <div class="avatar-profile">
+                                            <img
+                                                src="./img/img-icon/unsplash_pmACe385Ruo.svg"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <h3 class="profile-name">Lê Đức Anh</h3>
+                                    </div>
+                                    <!-- profile-title -->
+                                    <div class="profile-wrapper">
+                                        <ul class="profile-list">
+                                            <li class="profile-item">
+                                                <a
+                                                    class="profile-link"
+                                                    href="#!"
+                                                >
+                                                    <span>120</span>
+                                                    <span>Asset</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="profile-item">
+                                                <a
+                                                    class="profile-link"
+                                                    href="#!"
+                                                >
+                                                    <span>10K</span>
+                                                    <span>Followers</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="profile-item">
+                                                <a
+                                                    class="profile-link"
+                                                    href="#!"
+                                                >
+                                                    <span>70k</span>
+                                                    <span>Likes</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="profile-item">
+                                                <a
+                                                    class="profile-link"
+                                                    href="#!"
+                                                >
+                                                    <span>60</span>
+                                                    <span>Bidding</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- end .profile-list -->
+
+                                        <div class="balance">
+                                            <h2 class="title-balance">
+                                                Your Balance
+                                            </h2>
+                                            <div class="coin">
+                                                <span class="coin-image">
+                                                    <img
+                                                        src="./img/img-icon/Icon - Ethereum.svg"
+                                                        alt=""
+                                                    />
+                                                    <span class="coin-total"
+                                                        >4,668ETH</span
+                                                    >
+                                                </span>
+                                                <button class="coin-btn">
+                                                    <span class="add-btn"
+                                                        >Add</span
+                                                    >
+                                                    <img
+                                                        src="./img/img-icon/Icon - Chevron.svg"
+                                                        alt=""
+                                                    />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- end balance -->
+
+                                        <div class="revenue">
+                                            <div class="top-revenue">
+                                                <h3 class="title-revenue">
+                                                    Revenue
+                                                </h3>
+                                                <form class="time-form">
+                                                    <select name="time">
+                                                        <option value="1">
+                                                            This Month
+                                                        </option>
+                                                        <option value="2">
+                                                            This Days
+                                                        </option>
+                                                    </select>
+                                                </form>
+                                            </div>
+                                            <!-- end top-revenue -->
+                                            <div class="diagram-revenue">
+                                                <div class="values">
+                                                    <div class="item">
+                                                        <span class="value"
+                                                            >2.0</span
+                                                        >
+                                                        <span
+                                                            class="line"
+                                                        ></span>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <span class="value"
+                                                            >1.5</span
+                                                        >
+                                                        <span
+                                                            class="line"
+                                                        ></span>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <span class="value"
+                                                            >1.0</span
+                                                        >
+                                                        <span
+                                                            class="line"
+                                                        ></span>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <span class="value"
+                                                            >0.5</span
+                                                        >
+                                                        <span
+                                                            class="line"
+                                                        ></span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="times">
+                                                    <div class="item">
+                                                        <div
+                                                            style="
+                                                                --height-progress: 30%;
+                                                            "
+                                                            class="progress"
+                                                        ></div>
+                                                        <div class="calendar">
+                                                            Jan
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div
+                                                            style="
+                                                                --height-progress: 50%;
+                                                            "
+                                                            class="progress"
+                                                        ></div>
+                                                        <div class="calendar">
+                                                            Feb
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div
+                                                            style="
+                                                                --height-progress: 100%;
+                                                            "
+                                                            class="progress"
+                                                        ></div>
+                                                        <div class="calendar">
+                                                            Mar
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div
+                                                            style="
+                                                                --height-progress: 90%;
+                                                            "
+                                                            class="progress"
+                                                        ></div>
+                                                        <div class="calendar">
+                                                            Apr
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div
+                                                            style="
+                                                                --height-progress: 70%;
+                                                            "
+                                                            class="progress"
+                                                        ></div>
+                                                        <div class="calendar">
+                                                            May
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div
+                                                            style="
+                                                                --height-progress: 55%;
+                                                            "
+                                                            class="progress"
+                                                        ></div>
+                                                        <div class="calendar">
+                                                            Jun
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end .times -->
+                                            </div>
+                                            <!-- end .diagram-revenue -->
+
+                                            <div class="recent">
+                                                <div class="recent-title">
+                                                    <h3 class="title-activity">
+                                                        Recent Activity
+                                                    </h3>
+                                                    <span class="info-recent">
+                                                        <a
+                                                            class="link-recent"
+                                                            href="#!"
+                                                        >
+                                                            See All
+                                                            <img
+                                                                src="./img/img-icon/Icon - Arrow.svg"
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <!-- end .recent-title -->
+
+                                                <div class="list-users">
+                                                    <div class="user">
+                                                        <div class="left">
+                                                            <span
+                                                                class="image-user"
+                                                            >
+                                                                <img
+                                                                    src="./img/img-icon/unsplash_fyZOY0HiF9A.svg"
+                                                                    alt=""
+                                                                />
+                                                            </span>
+                                                            <div
+                                                                class="info-user"
+                                                            >
+                                                                <p>
+                                                                    Crystal_Art
+                                                                </p>
+                                                                <p
+                                                                    class="name-account"
+                                                                >
+                                                                    <span
+                                                                        >by</span
+                                                                    >@pvh
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="right">
+                                                            <span>New Bid</span>
+
+                                                            <span
+                                                                >6.25 ETH</span
+                                                            >
+                                                            <span>3m ago</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end user -->
+
+                                                    <div class="user">
+                                                        <div class="left">
+                                                            <span
+                                                                class="image-user"
+                                                            >
+                                                                <img
+                                                                    src="./img/img-icon/unsplash_fyZOY0HiF9A.svg"
+                                                                    alt=""
+                                                                />
+                                                            </span>
+                                                            <div
+                                                                class="info-user"
+                                                            >
+                                                                <p>
+                                                                    Crystal_Art
+                                                                </p>
+                                                                <p
+                                                                    class="name-account"
+                                                                >
+                                                                    <span
+                                                                        >by</span
+                                                                    >@lducanh
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="right">
+                                                            <span>New Bid</span>
+
+                                                            <span
+                                                                >7.50 ETH</span
+                                                            >
+                                                            <span>3m ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end .recent -->
+                                        </div>
+                                        <!-- end revenue -->
+                                    </div>
+                                    <!-- end .profile-wrapper -->
+                                </div>
+                                <!-- .tab-profile -->
+                            </div>
+                            <!-- end .header-wrapper -->
+                        </header>
+                    </main>
+                    <!-- end .headeer -->
+                </div>
+                <!-- end .contaier -->
+            </div>
+            <!-- end .wrapper inner -->
+        </div>
+        <!-- end .wrappeer -->
+    </body>
+</html>
