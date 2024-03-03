@@ -1,0 +1,125 @@
+@use "../../parts";
+
+.hero {
+    .hero-text {
+        height: 100%;
+         display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+
+        .hero-heading2 {
+            font-size: 3.667rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 131.523%;
+        }
+
+        .hero-heading1 {
+            padding-top: 10px;
+            font-size: 4.333rem;
+            font-weight: 800;
+        }
+        .hero-para {
+            max-width: 72%;
+            padding-top: 28px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 20.417px;
+        }
+    }
+
+    .hero-image {
+        border-radius: 16.667px 0px 0px 16.667px;
+        background: var(--Green-200, #DCFFCA);
+        width: 50vw;
+        // display: flex;
+        padding: 55px 0;
+        position: relative;
+        min-height: 708px;
+
+      
+        span {
+            font-size: 16.667rem;
+            color: var(--Green-1000, #216000);
+            opacity: 0.15;
+            font-weight: 800;
+            line-height: 100%;
+            rotate: 90deg;
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            bottom: 0;
+            left: 85px;
+            // width: 40%;
+            // bottom: 0;
+        }
+        img {
+            width: 499px;
+            width: 65%;
+            margin-top: 30px;
+            margin-left: -100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1498.89px) {
+    .hero {
+        .hero-image {
+            span {
+                font-size: 12rem;
+                left: -6%;
+            }
+
+            img {
+                width: 350px;
+                margin-left: -60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .hero {
+
+        .hero-text {
+            text-align: center;
+            margin-bottom: 40px;
+
+            .hero-para {
+                max-width: 100%;
+            }
+        }
+       
+        .hero-image {
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+            img {
+                margin: 0 auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            span {
+                position: static;
+                rotate: 0deg;
+                font-size: 13rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .hero {
+        .hero-image {
+
+            img {
+                max-width: 75%;
+            }
+            span {
+                font-size: 10rem;
+            }
+        }
+    }
+}

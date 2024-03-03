@@ -1,0 +1,19 @@
+
+@use "./mixin";
+@use "./variables" as var;
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+@include mixin.display;
+
+@each $name, $breakpoint in var.$breakpoints {
+    @media screen and (min-width: #{$breakpoint}px) {
+        @include mixin.display($name);
+    }
+}

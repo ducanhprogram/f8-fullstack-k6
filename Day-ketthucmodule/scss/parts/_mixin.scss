@@ -1,0 +1,24 @@
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin display($name: " ") {
+    $selectorNone: ".display-none";
+    $selectorBlock: ".display-block";
+
+    @if ($name != " ") {
+        $selectorNone: ".display-"+$name+"-none";
+        $selectorBlock: ".display-"+$name+ "-block";
+    }
+    #{$selectorNone} {
+        display: none;
+    }
+
+    #{$selectorBlock} {
+        display: block;
+    }
+}
