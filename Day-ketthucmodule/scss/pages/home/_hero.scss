@@ -1,6 +1,7 @@
 @use "../../parts";
 
 .hero {
+    padding-top: 108px;
     .hero-text {
         height: 100%;
          display: flex;
@@ -55,7 +56,6 @@
             // bottom: 0;
         }
         img {
-            width: 499px;
             width: 65%;
             margin-top: 30px;
             margin-left: -100px;

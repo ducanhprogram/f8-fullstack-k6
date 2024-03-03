@@ -4,6 +4,10 @@
     padding: 15px 0;
     background: var(--White, #FFF);
     box-shadow: 0px 1.667px 8.333px 0px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    top: 0;
  .logo {
         overflow: hidden;
     }
@@ -88,6 +92,7 @@
 
 @media screen and (max-width: 991.98px) {
     .header {
+        
         .row [class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
@@ -103,7 +108,7 @@
                 top: 0;
                 left: 0;
                 bottom: 0;
-                background: parts.$primaryColor;
+                background: #FF7F50;
                 min-width: 200px;
                 padding: 10px 0;
                 translate: -100%;
@@ -112,6 +117,7 @@
                 
                 .menu-list {
                     display: block;
+                    width: 100%;
 
                     .item {
                        
@@ -121,7 +127,7 @@
                             color: #fff !important;
                             padding: 10px 20px;
                             &:hover {
-                                color: orange !important;
+                                color: #000 !important;
                             }                         
                             
                         }

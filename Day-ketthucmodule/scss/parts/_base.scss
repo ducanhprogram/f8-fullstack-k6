@@ -17,3 +17,15 @@
         @include mixin.display($name);
     }
 }
+
+.btn {
+    display: inline-block;
+    padding: 13.333px 11.667px;
+    color: #fff;
+    border-radius: 6.667px;
+    font-size: 1.6667rem;
+    font-weight: 700;
+    &.btn-primary {
+        background: var.$primaryColor;
+    }
+}
