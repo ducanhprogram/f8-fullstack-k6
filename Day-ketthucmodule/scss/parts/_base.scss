@@ -28,4 +28,16 @@
     &.btn-primary {
         background: var.$primaryColor;
     }
+
+    &.btn-outline-seemore {
+        padding: 11.667px 21.667px;
+        border: 1px solid var.$primaryColor;
+        color: var.$textColor;
+
+        &:hover {
+            background-color: var.$primaryColor;
+            color: #fff;
+            
+        }
+    }
 }
